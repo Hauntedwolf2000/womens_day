@@ -1,6 +1,15 @@
 import { useState, useRef, useEffect } from "react";
 import "./WomensDay.css";
 import FlipCard from "./FlipCard";
+import Text2 from "./resources/Text2";  
+import React from "react";
+import ScrollAnimation from "./Final/ScrollAnimation";
+
+
+
+
+
+
 
 const WomensDay = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,6 +64,12 @@ const WomensDay = () => {
     loadScripts();
   }, []);
 
+
+
+  
+  
+
+
   return (
     
     <div className="container-wrapper" style={{ minHeight: "150vh", overflowY: "auto" }}>
@@ -89,6 +104,14 @@ const WomensDay = () => {
         </div>
       </div>
       <div className="flipcard"><h1><FlipCard/></h1></div>
+      <div>
+        <Text2/>
+      </div>
+      <div>
+        
+        <ScrollAnimation/>
+      </div>
+    
     </div>
   );
 };

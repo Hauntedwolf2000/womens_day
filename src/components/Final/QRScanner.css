@@ -1,0 +1,136 @@
+/* Container for the whole QR scanner component */
+.scanner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  
+}
+
+/* Main box that holds both left and right sections */
+.scanner-box {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1000px;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect on the main box */
+.scanner-box:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Left section: QR Scanner */
+.scanner-left {
+  position: relative;
+  flex: 1;
+  text-align: center;
+}
+
+/* Text above the QR scanner */
+.scanner-text {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Frame around the canvas */
+.scanner-frame {
+  position: relative;
+  display: inline-block;
+  border: 3px solid #333;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+/* Canvas for QR Code */
+.scanner-canvas {
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* Border around the QR code area */
+.scanner-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid #333;
+  pointer-events: none;
+}
+
+/* Moving line inside the scanner */
+.scanner-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, #ff0000, #ff7300, #fffb00, #00ff00, #00bfff, #ff00ff);
+  animation: scan 2s infinite;
+  pointer-events: none;
+}
+
+/* Animation for the scanning line */
+@keyframes scan {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 50%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+/* Image for the scanner icon or image */
+.scanner-image {
+  position: absolute;
+  bottom: 15px; /* Adjust bottom position */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 190px; /* Reduced size for better appearance */
+  height: auto;
+  opacity: 0.8; /* Slight transparency for a sleek effect */
+  transition: opacity 0.3s ease;
+}
+
+/* Image hover effect */
+.scanner-image:hover {
+  opacity: 1;
+}
+
+/* Right section: Description */
+.scanner-right {
+  flex: 1;
+  padding-left: 30px;
+  text-align: left;
+}
+
+/* Title for the location */
+.scanner-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Description text */
+.scanner-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-top: 0;
+}

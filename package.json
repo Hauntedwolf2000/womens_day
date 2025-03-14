@@ -7,11 +7,14 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^13.5.0",
+    "animejs": "^3.2.2",
     "flipclock": "^0.10.8",
     "jquery": "^3.7.1",
+    "qrious": "^4.0.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
+    "scrollmoo": "^1.0.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

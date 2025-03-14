@@ -1,11 +1,4 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* Centering Flip Card */
 .flip-container {
     display: flex;
     align-items: center;
@@ -94,10 +87,15 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 450px) {
+    /* Set flip-container height to 50vh for mobile screens below 450px */
+    .flip-container {
+        height: 50vh; /* Adjusted height for smaller screens */
+    }
+
     .flip-card {
         width: 90vw;
-        height: 40vh;
+        height: 50vh; /* Adjust flip-card height for small screens */
     }
 
     .flip-button {

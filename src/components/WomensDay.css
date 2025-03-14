@@ -1,12 +1,12 @@
 body {
     display: block;
-    height: auto;
-    min-height: 100vh;
+    height: 100vh;
     background-color: #fae1dd;
     overflow-y: auto;
     margin: 0;
     padding: 0;
 }
+
 
 .container-wrapper {
     display: flex;
@@ -16,7 +16,7 @@ body {
     padding: 200px 0;
     height: auto;
     min-height: 20vh;
-    overflow-y: auto; /* Allow scrolling */
+    /* Allow scrolling */
 }
 
 
@@ -244,14 +244,95 @@ body {
     font-size: 20px;
     font-weight: bold;
     margin-top: 0px;
-    color: #ff4081;
+    color: #F7728A;
 }
 
 .names{
     margin-top: 100px;
+    color: #ff002f;
 }
 .flipcard{
     margin-top: px;
 }
+
+/* Flipclock Wrapper */
+.ag-flipclock-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Flipclock Container */
+.ag-format-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Flipclock Styles */
+.js-flipclock {
+    font-family: 'Arial', sans-serif;
+    color: #003049;
+    font-size: 40px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 450px) {
+    /* Reduce font size for smaller screens */
+    .js-flipclock {
+        font-size: 30px;
+    }
+
+    /* Adjust container padding */
+    .ag-format-container {
+        padding: 10px;
+    }
+
+    /* Align clock properly */
+    .ag-flipclock-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    /* Reduce flipclock size */
+    .js-flipclock {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
