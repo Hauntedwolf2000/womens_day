@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   margin-top: 5%;
-  
 }
 
 /* Main box that holds both left and right sections */
@@ -133,4 +132,51 @@
   line-height: 1.6;
   font-weight: 400;
   margin-top: 0;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  /* Make the scanner box stack vertically */
+  .scanner-box {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  /* Left section takes full width */
+  .scanner-left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Right section takes full width and comes below the scanner */
+  .scanner-right {
+    width: 100%;
+    padding-left: 0;
+    text-align: center; /* Center-align the description */
+  }
+
+  /* Reduce the size of the QR scanner image */
+  .scanner-image {
+    width: 150px;
+  }
+
+  /* Adjust the text size for mobile */
+  .scanner-title {
+    font-size: 22px;
+  }
+
+  .scanner-description {
+    font-size: 14px;
+  }
+
+  /* Adjust the margin for the scanner text */
+  .scanner-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  /* Optional: Reduce padding around the canvas */
+  .scanner-frame {
+    padding: 10px;
+  }
 }

@@ -1,5 +1,12 @@
-.ml14{
+.ml14 {
   text-align: center;
   padding-left: 200px;
   padding-right: 200px;
+}
+
+@media (max-width: 450px) {
+  .ml14 {
+    padding-left: 10px;  /* Adjust padding to 10px (or any value) on smaller screens */
+    padding-right: 10px;
+  }
 }
