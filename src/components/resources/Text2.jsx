@@ -9,12 +9,7 @@ const Text2 = () => {
       .map((word, i) => `<span class='word' style="--i:${i}">${word} </span>`)
       .join(" ");
 
-    // Apply random colors to words
-    const wordsElements = document.querySelectorAll(".ml14 .word");
-    wordsElements.forEach(word => {
-      const hue = Math.floor(Math.random() * 360);
-      word.style.color = `hsl(${hue}, 100%, 50%)`;
-    });
+    
   }, []);
 
   return (

@@ -9,8 +9,6 @@ import ScrollAnimation from "./Final/ScrollAnimation";
 
 
 
-
-
 const WomensDay = () => {
   const [isOpen, setIsOpen] = useState(false);
   const logoRef = useRef(null);
@@ -93,7 +91,7 @@ const WomensDay = () => {
       </div>
 
 
-      <div className="names"><h1>Countdown ends in:</h1></div>
+      <div className="names" ><h1>Countdown ends in:</h1></div>
       
       <div className="name">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css" />
@@ -111,8 +109,11 @@ const WomensDay = () => {
         
         <ScrollAnimation/>
       </div>
-    
+      <div style={{color: "#f49000"}}>
+        Made with Love by Ulipsu.❤️
+      </div>
     </div>
+    
   );
 };
 

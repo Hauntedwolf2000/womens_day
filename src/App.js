@@ -8,9 +8,9 @@ function App() {
       <div
         className="logo-container"
         style={{
-          position: 'fixed', // Keeps logo fixed in place
-          top: '10px', // 10px from the top
-          left: '10px', // 10px from the left
+          position: 'relative', // Keeps logo fixed in place
+          top: '20px', // 10px from the top
+          left: '20px', // 10px from the left
           zIndex: '9999', // Ensures logo is on top of other elements
         }}
       >

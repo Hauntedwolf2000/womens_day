@@ -38,6 +38,9 @@ const QRScanner = () => {
           <p className="scanner-description">
             Hinkal Bogadi, Ring Rd, Bogadi 2nd Stage, Mysuru, Karnataka 570026
           </p>
+          <a href="https://maps.app.goo.gl/KW2VCCeCfC6F6BoG9" >
+    Open Google Maps
+</a>
         </div>
       </div>
     </div>
