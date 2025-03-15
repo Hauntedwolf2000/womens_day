@@ -1,12 +1,14 @@
 .ml14 {
+  padding-top: 100px;
   color: #9245ca;
   text-align: center;
   padding-left: 50px;
   padding-right: 50px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 445px) {
   .ml14 {
+    
     padding-left: 10px;  /* Adjust padding to 10px (or any value) on smaller screens */
     padding-right: 10px;
   }
