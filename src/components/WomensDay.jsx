@@ -109,9 +109,9 @@ const WomensDay = () => {
         
         <ScrollAnimation/>
       </div>
-      <div style={{color: "#f49000"}}>
-        Made with Love by Ulipsu.❤️
-      </div>
+      <div style={{ color: "#f49000", textAlign: "center", padding: "10px" }}>
+  Made with Love by Ulipsu.❤️
+</div>
     </div>
     
   );

@@ -17,7 +17,7 @@ const Text2 = () => {
       <h1 className="ml14">
         <span className="text-wrapper">
           <span className="letters">
-            It’s time to take a break, have fun, and celebrate YOU – the incredible women who make ULIPSU sparkle with awesomeness every single day! 💖 Join us for a fun-filled day of laughter, joy, and recognition as we come together to honor all the powerful, passionate, and unstoppable women around us!
+          <h5>It’s time to take a break, have fun, and celebrate YOU – the incredible women who make ULIPSU sparkle with awesomeness every single day! 💖 Join us for a fun-filled day of laughter, joy, and recognition as we come together to honor all the powerful, passionate, and unstoppable women around us!</h5>
           </span>
         </span>
       </h1>

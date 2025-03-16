@@ -53,7 +53,7 @@
 /* Flip Button Styling */
 .flip-button {
     position: absolute;
-    bottom: -50px; /* Fixed distance from bottom */
+    bottom: -30px; /* Fixed distance from bottom */
     left: 50%;
     transform: translateX(-50%);
     background-color: #ff4081;
@@ -84,6 +84,7 @@
     .flip-button {
         font-size: 14px;
         padding: 10px 16px;
+        bottom: 50px;
     }
 }
 
@@ -101,6 +102,7 @@
     .flip-button {
         font-size: 10px;
         padding: 8px 14px;
+        bottom: -100px;
     }
 }
 

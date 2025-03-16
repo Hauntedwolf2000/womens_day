@@ -18,12 +18,12 @@ const FlipCard = () => {
         <div className="flip-card-back">
           <img src={backImage} alt="Back" />
         </div>
-
-        {/* Flip Button */}
-        <button className="flip-button" onClick={() => setIsFlipped(!isFlipped)}>
-          Flip Card
-        </button>
       </div>
+
+      {/* Move the button outside the flipping container */}
+      <button className="flip-button" onClick={() => setIsFlipped(!isFlipped)}>
+        Flip Card
+      </button>
     </div>
   );
 };

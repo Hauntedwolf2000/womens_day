@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Quicksand:wght@400;700&display=swap');
+
 .ml14 {
   padding-top: 100px;
   color: #9245ca;
   text-align: center;
   padding-left: 50px;
   padding-right: 50px;
+  font-family: 'Nunito', 'Quicksand', sans-serif; /* Rounded fonts */
+  font-weight: 7; /* Make it slightly bolder for better visibility */
+  border-radius: 12px; /* Optional: If the text is inside a box */
 }
 
 @media (max-width: 445px) {

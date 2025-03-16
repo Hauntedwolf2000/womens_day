@@ -3,7 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20%;
+  margin-top: 10%; /* Reduce margin on smaller screens */
+  padding: 10px; /* Add some padding */
 }
 
 /* Main box that holds both left and right sections */
@@ -14,12 +15,12 @@
   max-width: 1000px;
   background-color: white;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  padding: 10px;
+  border-radius: 8px; /* Slight rounding for better look */
+  padding: 15px;
   transition: box-shadow 0.3s ease-in-out;
 }
 
-/* Hover effect on the main box */
+/* Hover effect */
 .scanner-box:hover {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
@@ -31,7 +32,7 @@
   text-align: center;
 }
 
-/* Text above the QR scanner */
+/* Scanner text */
 .scanner-text {
   font-size: 18px;
   margin-bottom: 15px;
@@ -44,31 +45,20 @@
 .scanner-frame {
   position: relative;
   display: inline-block;
-  border: 3px solid #333;
-  padding: 20px;
+  border: px solid #333;
+  padding: 15px;
   margin-bottom: 15px;
   border-radius: 10px;
 }
 
-/* Canvas for QR Code */
+/* QR Code Canvas */
 .scanner-canvas {
   display: block;
   margin: 0 auto;
   border-radius: 8px;
 }
 
-/* Border around the QR code area */
-.scanner-border {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: 2px solid #333;
-  pointer-events: none;
-}
-
-/* Moving line inside the scanner */
+/* Moving scanning line */
 .scanner-line {
   position: absolute;
   top: 0;
@@ -80,7 +70,7 @@
   pointer-events: none;
 }
 
-/* Animation for the scanning line */
+/* Animation */
 @keyframes scan {
   0% {
     top: 0;
@@ -93,31 +83,30 @@
   }
 }
 
-/* Image for the scanner icon or image */
+/* Scanner image/icon */
 .scanner-image {
   position: absolute;
-  bottom: 15px; /* Adjust bottom position */
+  bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
-  width: 190px; /* Reduced size for better appearance */
+  width: 180px;
   height: auto;
-  opacity: 0.8; /* Slight transparency for a sleek effect */
+  opacity: 0.8;
   transition: opacity 0.3s ease;
 }
 
-/* Image hover effect */
 .scanner-image:hover {
   opacity: 1;
 }
 
-/* Right section: Description */
+/* Right section */
 .scanner-right {
   flex: 1;
   padding-left: 30px;
   text-align: left;
 }
 
-/* Title for the location */
+/* Title */
 .scanner-title {
   font-size: 24px;
   margin-bottom: 15px;
@@ -131,36 +120,36 @@
   color: #555;
   line-height: 1.6;
   font-weight: 400;
-  margin-top: 0;
 }
 
-/* Mobile responsiveness */
+/* === Mobile Responsiveness === */
 @media screen and (max-width: 768px) {
-  /* Make the scanner box stack vertically */
+  /* Stack the scanner box vertically */
   .scanner-box {
     flex-direction: column;
+    width: 90%; /* Use more width for mobile */
     padding: 20px;
   }
 
-  /* Left section takes full width */
+  /* Adjust left section */
   .scanner-left {
     width: 100%;
     margin-bottom: 20px;
   }
 
-  /* Right section takes full width and comes below the scanner */
+  /* Adjust right section */
   .scanner-right {
     width: 100%;
     padding-left: 0;
-    text-align: center; /* Center-align the description */
+    text-align: center;
   }
 
-  /* Reduce the size of the QR scanner image */
+  /* Reduce QR scanner image size */
   .scanner-image {
-    width: 150px;
+    width: 140px;
   }
 
-  /* Adjust the text size for mobile */
+  /* Adjust text sizes */
   .scanner-title {
     font-size: 22px;
   }
@@ -169,14 +158,34 @@
     font-size: 14px;
   }
 
-  /* Adjust the margin for the scanner text */
+  /* Adjust scanner text */
   .scanner-text {
     font-size: 16px;
     margin-bottom: 10px;
   }
 
-  /* Optional: Reduce padding around the canvas */
+  /* Reduce padding for scanner frame */
   .scanner-frame {
     padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  .scanner-box {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .scanner-title {
+    font-size: 20px;
+  }
+
+  .scanner-description {
+    font-size: 13px;
+  }
+
+  .scanner-image {
+    width: 120px;
   }
 }
