@@ -90,9 +90,9 @@
 
 @media (max-width: 450px) {
     .flip-container {
-        margin-top: 90%;
+        margin-top: 20%;
         height: auto; /* Adjust height dynamically */
-        min-height: 70vh;
+        min-height: 100vh;
     }
 
     .flip-card {
@@ -109,9 +109,9 @@
 
 @media (max-width: 350px) {
     .flip-container {
-        margin-top: 80%;
+        margin-top: 20%;
         height: auto; /* Adjust height dynamically */
-        min-height: 70vh;
+        min-height: 110vh;
     }
 
     .flip-card {
