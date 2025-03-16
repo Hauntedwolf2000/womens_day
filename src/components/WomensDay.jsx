@@ -91,13 +91,14 @@ const WomensDay = ({ name }) => {
         <div className="shadow"></div>
       </div>
 
+      <div className="flipcard"><h1><FlipCard/></h1></div>
 
-      <div className="names" ><h1>Countdown ends in:</h1></div>
+      <div className="names" ><h1>Celebration starts in:</h1></div>
       <div>
         <Counter/>
       </div>
       
-      <div className="flipcard"><h1><FlipCard/></h1></div>
+      
       <div>
         <Text2/>
       </div>

@@ -88,7 +88,7 @@ body {
     text-align: center;
     line-height: 25px;
     top: 19px;
-    left: 40%;
+    left: 50%;
     transform: translateX(-50%);
     color: #003049;
     width: 100%; /* Ensures text remains within the container */
@@ -251,7 +251,7 @@ body {
 }
 
 .names{
-    margin-top: 100px;
+    margin-top: 1%;
     color: #f49000;
 }
 .flipcard{
@@ -259,9 +259,19 @@ body {
 }
 
 
+@media (max-width: 750px) {
+    .names{
+        margin-top: -50%;
+        color: #f49000;
+    }
+}
 
-
-
+@media (max-width: 450px) {
+    .names{
+        margin-top: -30%;
+        color: #f49000;
+    }
+}
 
 
 

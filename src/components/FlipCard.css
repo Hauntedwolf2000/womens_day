@@ -1,4 +1,5 @@
 .flip-container {
+    margin-top: 120px;
     display: flex;
     flex-direction: column; /* Stack flip card and button */
     align-items: center;
@@ -75,6 +76,7 @@
 /* ✅ Responsive Adjustments */
 @media (max-width: 768px) {
     .flip-card {
+        margin-top: -50%;
         width: 80vw;
         height: 50vh;
     }
@@ -88,6 +90,7 @@
 
 @media (max-width: 450px) {
     .flip-container {
+        margin-top: 20%;
         height: auto; /* Adjust height dynamically */
         min-height: 70vh;
     }
