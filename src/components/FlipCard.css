@@ -90,7 +90,7 @@
 
 @media (max-width: 450px) {
     .flip-container {
-        margin-top: 20%;
+        margin-top: 40%;
         height: auto; /* Adjust height dynamically */
         min-height: 70vh;
     }
