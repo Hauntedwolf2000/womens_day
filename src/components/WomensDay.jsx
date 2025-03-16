@@ -4,6 +4,7 @@ import FlipCard from "./FlipCard";
 import Text2 from "./resources/Text2";  
 import React from "react";
 import ScrollAnimation from "./Final/ScrollAnimation";
+import Counter from "./Counter/Counter";
 
 
 
@@ -92,15 +93,10 @@ const WomensDay = () => {
 
 
       <div className="names" ><h1>Countdown ends in:</h1></div>
-      
-      <div className="name">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css" />
-        <div className="ag-flipclock-block">
-          <div className="ag-format-container">
-            <div className="js-flipclock"></div>
-          </div>
-        </div>
+      <div>
+        <Counter/>
       </div>
+      
       <div className="flipcard"><h1><FlipCard/></h1></div>
       <div>
         <Text2/>

@@ -26,10 +26,9 @@ const QRScanner = () => {
           <div className="scanner-frame">
             <canvas className="scanner-canvas" />
             <div className="scanner-border"></div>
-            <div className="scanner-line" />
           </div>
-          {/* Scanner Image */}
-          <img src={qr} alt="Scanner" className="scanner-image" />
+          <div className="scanner-image-box"><img src={qr} alt="Scanner" className="scanner-image" /></div>
+          <div className="scanner-line" />
         </div>
 
         {/* Right Section: Description */}

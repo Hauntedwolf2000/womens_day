@@ -27,7 +27,7 @@ const Typewriter = ({ text, speed = 100, delay = 2000 }) => {
 const ScrollAnimation = () => {
   return (
     <><div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "20vh", color: "rgb(73, 9, 130)" }}>
-      <h1 style={{color: "#f49000"}}>When</h1>
+      <h1 style={{color: "#f49000"}}>When ?</h1>
       <h2><Typewriter text="On 17th March" speed={100} delay={2000} /></h2>
     </div>
     

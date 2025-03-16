@@ -24,7 +24,8 @@ function App() {
           }}
         />
       </div>
-      <WomensDay />
+      <WomensDay/>
+    
         
     </div>
   );

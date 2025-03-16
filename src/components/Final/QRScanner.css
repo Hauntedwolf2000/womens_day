@@ -45,10 +45,13 @@
 .scanner-frame {
   position: relative;
   display: inline-block;
-  border: px solid #333;
-  padding: 15px;
+   /* Reduced border thickness */
+  padding: 10px; /* Adjusted padding */
   margin-bottom: 15px;
-  border-radius: 10px;
+  border-radius: 8px; /* Slightly rounded corners */
+  overflow: hidden; /* Ensures the scanner line stays inside */
+  width: 180px;
+  height: 180px; /* Match the scanner size */
 }
 
 /* QR Code Canvas */
@@ -61,14 +64,16 @@
 /* Moving scanning line */
 .scanner-line {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
+
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center it properly */
+  height: 5px;
+  width: 190px;
   background: linear-gradient(to right, #ff0000, #ff7300, #fffb00, #00ff00, #00bfff, #ff00ff);
-  animation: scan 2s infinite;
+  animation: scan 2s infinite ease-in-out;
   pointer-events: none;
 }
+
 
 /* Animation */
 @keyframes scan {
@@ -86,6 +91,7 @@
 /* Scanner image/icon */
 .scanner-image {
   position: absolute;
+  border: 3px solid #333;
   bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
@@ -96,7 +102,7 @@
 }
 
 .scanner-image:hover {
-  opacity: 1;
+  opacity: 100;
 }
 
 /* Right section */
@@ -110,6 +116,7 @@
 .scanner-title {
   font-size: 24px;
   margin-bottom: 15px;
+  margin-top: 25%;
   color: #333;
   font-weight: 600;
 }
@@ -188,4 +195,13 @@
   .scanner-image {
     width: 120px;
   }
+  .scanner-title {
+    margin-top: 2%;
+    color: #333;
+  }
+  .scanner-right{
+    padding-bottom: 20%;
+  }
 }
+
+

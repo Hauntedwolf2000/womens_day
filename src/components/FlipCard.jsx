@@ -1,10 +1,19 @@
 import { useState } from "react";
-import frontImage from "./resources/front.jpg"; // Front Image
-import backImage from "./resources/back.jpg";   // Back Image
-import "./FlipCard.css"; // Import the CSS file
+import frontImage from "./resources/front.jpg";
+import backImage from "./resources/back.jpg";
+import confetti from "canvas-confetti";
+import "./FlipCard.css"; // Import CSS
 
 const FlipCard = () => {
   const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleConfetti = () => {
+    confetti({
+      particleCount: 150,
+      spread: 100,
+      origin: { y: 0.6 }, // Adjust origin to make it more realistic
+    });
+  };
 
   return (
     <div className="flip-container">
@@ -21,9 +30,12 @@ const FlipCard = () => {
       </div>
 
       {/* Move the button outside the flipping container */}
-      <button className="flip-button" onClick={() => setIsFlipped(!isFlipped)}>
-        Flip Card
-      </button>
+      <button className="flip-button" onClick={() => { 
+    setIsFlipped(!isFlipped); 
+    handleConfetti(); 
+}}>
+  Celebrate 🎉
+</button>
     </div>
   );
 };

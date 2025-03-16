@@ -1,6 +1,6 @@
 body {
     display: block;
-  
+    overflow-x: hidden;
     background-color: #fae1dd;
     margin: 0;
     padding: 0;
@@ -8,11 +8,12 @@ body {
 
 
 .container-wrapper {
+
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 200px 0;
+    padding-top: 150px;
     height: auto;
     min-height: 20vh;
     /* Allow scrolling */
@@ -92,7 +93,7 @@ body {
 }
 
 .heart {
-    background-color: #d62828;
+    background-color: #F7728A;
     display: inline-block;
     height: 30px;
     margin: 0 10px;
@@ -106,7 +107,7 @@ body {
 .heart:before,
 .heart:after {
     content: "";
-    background-color: #d62828;
+    background-color: #F7728A;
     border-radius: 50%;
     height: 30px;
     position: absolute;
@@ -254,74 +255,12 @@ body {
     margin-top: px;
 }
 
-/* Flipclock Wrapper */
-.ag-flipclock-block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    flex-wrap: nowrap; /* Prevents wrapping */
-    overflow: hidden; /* Ensures no extra space */
-}
-
-/* Flipclock Container */
-.ag-format-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    width: auto; /* Allows content to shrink */
-    max-width: 100%;
-    transform: scale(0.8); /* Reduces overall size */
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-    .ag-format-container {
-        transform: scale(0.7); /* Further reduces size on smaller screens */
-    }
-}
-
-@media screen and (max-width: 350px) {
-    .ag-format-container {
-        transform: scale(0.6); /* Even smaller on very small screens */
-    }
-}
 
 
-/* Flipclock Styles */
-.js-flipclock {
-    font-family: 'Arial', sans-serif;
-    color: #490982;
-    font-size: 40px;
-}
 
-/* Responsive Adjustments */
-@media (max-width: 450px) {
-    /* Reduce font size for smaller screens */
-    .js-flipclock {
-        font-size: 30px;
-    }
 
-    /* Adjust container padding */
-    .ag-format-container {
-        padding: 10px;
-    }
 
-    /* Align clock properly */
-    .ag-flipclock-block {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-    
-    /* Reduce flipclock size */
-    .js-flipclock {
-        width: 80%;
-        text-align: center;
-    }
-}
+
 
 
 

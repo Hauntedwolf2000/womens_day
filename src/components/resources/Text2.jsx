@@ -1,15 +1,27 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Text2.css";
 
-const Text2 = () => {
-  useEffect(() => {
-    const textWrapper = document.querySelector(".ml14 .letters");
-    const words = textWrapper.textContent.split(" ");
-    textWrapper.innerHTML = words
-      .map((word, i) => `<span class='word' style="--i:${i}">${word} </span>`)
-      .join(" ");
+const textContent = `It’s time to take a break, have fun, and celebrate YOU – 
+the incredible women who make ULIPSU sparkle with awesomeness every single day! 💖 
+Join us for a fun-filled day of laughter, joy, and recognition as we come together 
+to honor all the powerful, passionate, and unstoppable women around us!`;
 
-    
+const Text2 = () => {
+  const [displayedText, setDisplayedText] = useState("");
+  const speed = 50; // Typing speed in ms
+
+  useEffect(() => {
+    let i = 0;
+    const interval = setInterval(() => {
+      if (i < textContent.length) {
+        setDisplayedText((prev) => prev + textContent.charAt(i));
+        i++;
+      } else {
+        clearInterval(interval);
+      }
+    }, speed);
+
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -17,7 +29,7 @@ const Text2 = () => {
       <h1 className="ml14">
         <span className="text-wrapper">
           <span className="letters">
-          <h5>It’s time to take a break, have fun, and celebrate YOU – the incredible women who make ULIPSU sparkle with awesomeness every single day! 💖 Join us for a fun-filled day of laughter, joy, and recognition as we come together to honor all the powerful, passionate, and unstoppable women around us!</h5>
+          <h5>{displayedText}</h5>
           </span>
         </span>
       </h1>

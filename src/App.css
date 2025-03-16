@@ -1,10 +1,39 @@
-html, body {
-    width: 100%;
+/* Global Fix for Overflow */
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-/* For modern browsers */
+    width: 100%;
+    overflow-x: hidden !important; /* Ensures no horizontal scroll */
+}
 
+/* Ensures Container Doesn't Overflow */
+.container-wrapper {
+    max-width: 100vw; /* Prevents overflowing the viewport */
+    overflow-x: hidden; /* Hides any extra horizontal content */
+}
 
-    
+/* FlipClock Container Fix */
+.ag-flipclock-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.ag-format-container {
+    max-width: 100%;
+    transform: scale(0.8);
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .ag-format-container {
+        transform: scale(0.7);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .ag-format-container {
+        transform: scale(0.6);
+    }
+}
