@@ -90,7 +90,26 @@
 
 @media (max-width: 450px) {
     .flip-container {
-        margin-top: 40%;
+        margin-top: 90%;
+        height: auto; /* Adjust height dynamically */
+        min-height: 70vh;
+    }
+
+    .flip-card {
+        width: 90vw;
+        height: 60vh;
+    }
+
+    .flip-button {
+        font-size: 12px;
+        padding: 8px 14px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .flip-container {
+        margin-top: 80%;
         height: auto; /* Adjust height dynamically */
         min-height: 70vh;
     }
