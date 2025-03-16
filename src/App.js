@@ -1,5 +1,5 @@
 import './App.css';
-import WomensDay from './components/WomensDay';
+import AskName from './components/AskName/AskName';
 import logo from './components/resources/logo.png';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
       <div
         className="logo-container"
         style={{
+          backgroundColor:'#fae1dd',
           position: 'relative', // Keeps logo fixed in place
           top: '20px', // 10px from the top
           left: '20px', // 10px from the left
@@ -19,14 +20,13 @@ function App() {
           alt="Logo"
           className="logo"
           style={{
-            width: '200px', // Set logo width
+            width: '150px', // Set logo width
             height: 'auto', // Maintain aspect ratio
           }}
         />
       </div>
-      <WomensDay/>
-    
-        
+      
+      <AskName/>
     </div>
   );
 }

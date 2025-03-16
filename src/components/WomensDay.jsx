@@ -10,7 +10,7 @@ import Counter from "./Counter/Counter";
 
 
 
-const WomensDay = () => {
+const WomensDay = ({ name }) => {
   const [isOpen, setIsOpen] = useState(false);
   const logoRef = useRef(null);
 
@@ -77,7 +77,7 @@ const WomensDay = () => {
           <div className="envelope"></div>
           <div className="front"></div>
           <div className="card" style={{ top: isOpen ? "-90px" : "0" }}>
-            <div className="text">Happy<br />Women's<br />Day!</div>
+            <div className="text">Happy<br />Women's<br />Day, {name}!</div>
             <div className="heart"></div>
           </div>
           <div className="hearts">
@@ -106,7 +106,7 @@ const WomensDay = () => {
         <ScrollAnimation/>
       </div>
       <div style={{ color: "#f49000", textAlign: "center", padding: "10px" }}>
-  Made with Love by Ulipsu.❤️
+      Made with ❤️ by Ulipsu Mens.
 </div>
     </div>
     

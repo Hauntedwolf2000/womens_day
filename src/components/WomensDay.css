@@ -88,9 +88,12 @@ body {
     text-align: center;
     line-height: 25px;
     top: 19px;
-    left: 85px;
+    left: 40%;
+    transform: translateX(-50%);
     color: #003049;
+    width: 100%; /* Ensures text remains within the container */
 }
+
 
 .heart {
     background-color: #F7728A;
@@ -254,6 +257,7 @@ body {
 .flipcard{
     margin-top: px;
 }
+
 
 
 
