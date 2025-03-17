@@ -34,7 +34,7 @@ const FlipCard = () => {
     setIsFlipped(!isFlipped); 
     handleConfetti(); 
 }}>
-  Celebrate 🎉
+   Click here to Celebrate 🎉
 </button>
     </div>
   );
